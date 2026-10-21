@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapSpace | Image Gallery</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#">Snap<span>Space</span></a><p>A little gallery of beautiful places</p></header>
+  <main class="container">
+    <section class="intro"><p class="eyebrow">VISUAL JOURNAL</p><h1>Find your next <span>happy place.</span></h1><p>Explore landscapes, architecture, and moments from around the world.</p></section>
+    <nav class="filters" aria-label="Filter gallery">
+      <button class="filter active" data-filter="all">All photos</button><button class="filter" data-filter="nature">Nature</button><button class="filter" data-filter="city">Cities</button><button class="filter" data-filter="ocean">Ocean</button>
+    </nav>
+    <section id="gallery" class="gallery" aria-label="Photo gallery"></section>
+    <p class="footnote">Select any photo to view it larger. Images load from Unsplash, so an internet connection is required.</p>
+  </main>
+  <div id="lightbox" class="lightbox" aria-modal="true" role="dialog" aria-label="Photo viewer" hidden>
+    <button id="close" class="close" aria-label="Close image viewer">×</button>
+    <button id="prev" class="arrow" aria-label="Previous image">‹</button><figure><img id="lightbox-image" alt=""><figcaption id="caption"></figcaption></figure>
+    <button id="next" class="arrow" aria-label="Next image">›</button><p class="counter" id="counter"></p>
+  </div>
+  <script src="script.js"></script>
+</body></html>

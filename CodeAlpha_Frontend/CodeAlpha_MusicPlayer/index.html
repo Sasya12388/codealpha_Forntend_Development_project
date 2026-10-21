@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Groove | Music Player</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app"><header><a class="brand" href="#">groove<span>.</span></a><span class="pill">YOUR LITTLE MUSIC SPACE</span></header>
+<section class="player"><div class="cover" id="cover"><div class="disc"><div class="disc-center">♫</div></div><span class="cover-label">NOW PLAYING</span></div><p class="eyebrow">NOW PLAYING</p><h1 id="title">Midnight Drive</h1><p id="artist" class="artist">The Paper Planes</p>
+<audio id="audio" preload="metadata"></audio><div class="time-row"><span id="current-time">0:00</span><span id="duration">0:00</span></div><input type="range" id="progress" min="0" max="100" value="0" aria-label="Track progress">
+<div class="controls"><button id="previous" aria-label="Previous song">⏮</button><button id="play" class="play" aria-label="Play">▶</button><button id="next" aria-label="Next song">⏭</button></div>
+<div class="volume-row"><span>🔈</span><input type="range" id="volume" min="0" max="1" step=".01" value=".75" aria-label="Volume"><span>🔊</span></div></section>
+<section class="playlist-section"><div class="playlist-heading"><h2>Your playlist</h2><span id="track-count">3 TRACKS</span></div><div id="playlist" class="playlist"></div><p class="note">Demo tracks stream from external sample audio URLs. For your final submission, use music you own or have permission to use.</p></section></main><script src="script.js"></script></body></html>
